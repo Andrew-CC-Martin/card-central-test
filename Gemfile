@@ -47,3 +47,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # add rspec for unit testing
 gem 'rspec-rails'
+
+# add bootstrap gem for styling views
+gem 'bootstrap', '~> 5.0.0.beta1'
+
+# add jquery as a bootstrap dependency
+gem 'jquery-rails'
