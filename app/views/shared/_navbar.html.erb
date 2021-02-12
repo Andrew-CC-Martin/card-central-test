@@ -17,7 +17,13 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Login</a>
+            <% if user_signed_in? %>
+              <%# logout button (only show when logged in) %>
+              <%= link_to "Log out", destroy_user_session_path, method: "delete", class: "nav-link active" %>
+            <% else %>
+              <%# log in button - only show this when logged out %>
+              <%= link_to "Log in", new_user_session_path, class: "nav-link active" %>
+            <% end %>
           </li>
         </ul>
         <%# bring this back in when search has been implemented %>
