@@ -20,5 +20,9 @@
   <%= @listing.sold %>
 </p>
 
+<p>
+  <%= image_tag @listing.photo %>
+</p>
+
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
