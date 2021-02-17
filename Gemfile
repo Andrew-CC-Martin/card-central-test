@@ -53,3 +53,7 @@ gem 'bootstrap', '~> 5.0.0.beta1'
 
 # add devise gem for authentication
 gem 'devise'
+
+# add cloudinary for image upload
+gem 'cloudinary', require: false
+gem 'activestorage-cloudinary-service'
