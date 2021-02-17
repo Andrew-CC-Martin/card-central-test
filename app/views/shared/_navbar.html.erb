@@ -19,7 +19,7 @@
           <li class="nav-item">
             <% if user_signed_in? %>
               <%# logout button (only show when logged in) %>
-              <%= link_to "Log out", destroy_user_session_path, method: "delete", class: "nav-link active" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link active" %>
             <% else %>
               <%# log in button - only show this when logged out %>
               <%= link_to "Log in", new_user_session_path, class: "nav-link active" %>
